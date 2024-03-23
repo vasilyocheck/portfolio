@@ -1,0 +1,13 @@
+.winBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  height: 100%;
+
+  text-align: center;
+
+  & div {
+    color: #48d748;
+  }
+}

@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  font-weight: bold;
+  color: whitesmoke;
+
+  & div {
+    text-align: center;
+  }
+}
+
+.accent {
+  text-decoration: underline;
+}
