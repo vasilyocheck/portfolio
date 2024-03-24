@@ -1,3 +1,3 @@
 export function App() {
-  return <div>App</div>
+  return <div style={{ color: 'black' }}>App</div>
 }
