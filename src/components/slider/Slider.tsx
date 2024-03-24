@@ -24,19 +24,19 @@ const items = [
     text={
       "From the start of the project, through to completion, Vasily supported us and exceeded our expectations in every way. Not only was our experience personal and friendly, his ability to identify and present our key messages in an imaginative and creative way gave us a huge amount of confidence in him. In many ways Vasily understood website needs better than we did and he complimented our vision perfectly. He's reliable, professional and easy to work with. I can’t recommend him highly enough and we look forward to continuing our working relationship together."
     }
-    userName={'Jovic Olga'}
+    userName={'jovic olga'}
   />,
   <Slide
     text={
       'Vasily was very helpful and fast to respond to our inquiry to help with Wordpress website issues.  His knowledge was comprehensive.  Even better, his advice helped me enough to solve the problems and he did not accept any payment for this, very straight up guy! Thank you Vasily.'
     }
-    userName={'Rogachev Ivan'}
+    userName={'rogachev ivan'}
   />,
   <Slide
     text={
       'Vasily is a great help creating a landing page for our shipment company. Everything we ask him to do is done quickly and efficiently, we would be lost without him.'
     }
-    userName={'Danilyuk Oxana'}
+    userName={'danilyuk oxana'}
   />,
 ]
 
