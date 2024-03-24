@@ -1,11 +1,17 @@
-import React from 'react';
-import {Icon} from "../icon/Icon";
-import {animateScroll as scroll} from "react-scroll";
+import { FC } from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 
-export const Logo: React.FC = () => {
-    return (
-        <a href={'/'} onClick={() => {scroll.scrollToTop()}}>
-            <Icon iconId='code' />
-        </a>
-    );
-};
+import { Icon } from '../icon/Icon'
+
+export const Logo: FC = () => {
+  return (
+    <a
+      href={'/'}
+      onClick={() => {
+        scroll.scrollToTop()
+      }}
+    >
+      <Icon iconId={'code'} />
+    </a>
+  )
+}

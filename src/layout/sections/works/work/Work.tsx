@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react'
 
 import { Button } from '@/components/Button'
 import { Link } from '@/components/Link'
@@ -10,7 +10,7 @@ type WorkPropsType = {
   text: string
   title: string
 }
-export const Work: React.FC<WorkPropsType> = (props: WorkPropsType) => {
+export const Work: FC<WorkPropsType> = (props: WorkPropsType) => {
   return (
     <S.Work>
       <S.ImageWrapper>

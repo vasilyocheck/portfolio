@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react'
 import Tilt from 'react-parallax-tilt'
 
 import { Container } from '@/components/Container'
@@ -8,7 +8,7 @@ import Typewriter from 'typewriter-effect'
 import photo from '../../../assets/images/photo_demo.webp'
 import { S } from './Main_Styles'
 
-export const Main: React.FC = () => {
+export const Main: FC = () => {
   return (
     <S.Main id={'home'}>
       <Container>
@@ -18,7 +18,6 @@ export const Main: React.FC = () => {
             <S.Name>
               I am <span>Vasily Medvedev</span>
             </S.Name>
-            {/*<S.MainTitle>A Web Developer.</S.MainTitle>*/}
             <S.MainTitle>
               <p>A Web Developer</p>
               <Typewriter

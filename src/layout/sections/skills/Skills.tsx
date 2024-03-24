@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react'
 import { Fade } from 'react-awesome-reveal'
 
 import { Container } from '@/components/Container'
@@ -47,7 +47,7 @@ const skillsData = [
   },
 ]
 
-export const Skills: React.FC = () => {
+export const Skills: FC = () => {
   return (
     <S.Skills id={'skills'}>
       <Container>
