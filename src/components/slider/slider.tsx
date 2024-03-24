@@ -2,8 +2,8 @@ import AliceCarousel from 'react-alice-carousel'
 
 import { Testimonials, testimonials } from '@/components/slider/testimonials'
 
-import './slider.css'
 import 'react-alice-carousel/lib/alice-carousel.css'
+import './slider.css'
 
 import { S } from './slider-styles'
 
