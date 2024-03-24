@@ -17,7 +17,7 @@ const Slide = (props: Testimonials) => {
 }
 
 export const Slider = () => {
-  const items = testimonials.map(i => <Slide text={i.text} userName={i.userName} />)
+  const items = testimonials.map(i => <Slide key={i.text} text={i.text} userName={i.userName} />)
 
   return (
     <S.Slider>
