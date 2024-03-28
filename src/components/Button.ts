@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import {theme} from "../styles/Theme";
+import { theme } from '@/styles/Theme'
+import styled from 'styled-components'
 
 export const Button = styled.button`
   font-size: 0.875rem;
@@ -9,16 +9,16 @@ export const Button = styled.button`
   width: 170px;
   height: 32px;
   z-index: 0;
-  
+
   position: relative;
-  
+
   &:hover {
     &::before {
       width: 100%;
       height: 100%;
     }
   }
-  
+
   &::before {
     content: '';
     position: absolute;
@@ -32,4 +32,14 @@ export const Button = styled.button`
     z-index: -1;
     transition: ${theme.animations.transition};
   }
-`;
+
+  &:disabled {
+    opacity: 0.5;
+    &:hover {
+      &::before {
+        height: 10px;
+        width: 50%;
+      }
+    }
+  }
+`
