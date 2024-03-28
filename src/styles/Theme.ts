@@ -10,6 +10,7 @@ export const theme = {
     placeholderColor: '#495057',
     primaryBg: '#1F1F20',
     secondaryBg: '#252527',
+    success: '#32a132',
   },
 
   media: {
