@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { FlexWrapper } from '@/components/FlexWrapper'
 import { Icon } from '@/components/icon/Icon'
 
@@ -10,14 +8,14 @@ const footerData = [
     height: '24px',
     iconId: 'codewars',
     link: 'https://www.codewars.com/users/Basyok',
-    viewBox: '0 0 21px 21px',
+    viewBox: '0 0 24 24',
     width: '24px',
   },
   {
     height: '21px',
     iconId: 'telegram',
     link: 'https://t.me/bacek_03',
-    viewBox: '0 0 21px 21px',
+    viewBox: '0 0 21 21',
     width: '21px',
   },
   {
@@ -27,16 +25,9 @@ const footerData = [
     viewBox: '0 0 96 96',
     width: '21px',
   },
-  /*{
-    height: '21px',
-    iconId: 'linkedin',
-    link: 'https://www.codewars.com/users/Basyok',
-    viewBox: '0 0 21px 21px',
-    width: '21px',
-  },*/
 ]
 
-export const Footer: FC = () => {
+export const Footer = () => {
   return (
     <S.Footer>
       <FlexWrapper align={'center'} direction={'column'}>
@@ -44,7 +35,7 @@ export const Footer: FC = () => {
         <S.SocialList>
           {footerData.map((item, ind) => {
             return (
-              <a href={item.link} rel={'noreferrer'} target={'_blank'}>
+              <a href={item.link} key={item.iconId} rel={'noreferrer'} target={'_blank'}>
                 <S.SocialItem>
                   <S.SocialLink>
                     <Icon

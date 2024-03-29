@@ -24,27 +24,6 @@ const Name = styled.span`
   margin: 22px 0 32px;
 `
 
-/*const Pagination = styled.div`
-  span {
-    display: inline-block;
-    width: 7px;
-    height: 7px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 3.5px;
-
-    & + span {
-      margin-left: 5px;
-    }
-
-    &.active {
-      background-color: ${theme.colors.accent};
-      width: 20px;
-      height: 7px;
-      border-radius: 3.5px;
-    }
-  }
-`*/
-
 export const S = {
   Name,
   /*Pagination,*/

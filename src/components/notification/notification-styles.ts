@@ -1,11 +1,12 @@
+import { theme } from '@/styles/Theme'
 import styled from 'styled-components'
 
-type Notification = {
+type NotificationProps = {
   color: string
 }
 
-const Notification = styled.p<Notification>`
-  color: ${props => props.color || '#fff'};
+const Notification = styled.p<NotificationProps>`
+  color: ${props => props.color || theme.colors.font};
   font-weight: bold;
 `
 

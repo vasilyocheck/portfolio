@@ -1,25 +1,25 @@
-import styled from "styled-components";
-import {FlexWrapper} from "../../../components/FlexWrapper";
-import {theme} from "../../../styles/Theme";
-import {Link} from "../../../components/Link";
-import {Button} from "../../../components/Button";
+import { Button } from '@/components/Button'
+import { FlexWrapper } from '@/components/FlexWrapper'
+import { Link } from '@/components/Link'
+import { theme } from '@/styles/Theme'
+import styled from 'styled-components'
 
 const Works = styled.section`
   ${FlexWrapper} {
     gap: 30px;
   }
   position: relative;
-`;
+`
 const Work = styled.div`
-  background-color: ${theme.colors.secondaryBg};  
-  
+  background-color: ${theme.colors.secondaryBg};
+
   ${Link} {
     padding: 10px 0;
     & + ${Link} {
       margin-left: 20px;
     }
-  }  
-`;
+  }
+`
 
 const ImageWrapper = styled.div`
   position: relative;
@@ -45,56 +45,54 @@ const ImageWrapper = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.30);
+    background: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(2px);
     opacity: 0;
     transition: ${theme.animations.transition};
   }
-  
+
   &:hover {
     &::before {
       opacity: 1;
     }
-    ${Button}{
+    ${Button} {
       opacity: 1;
       transform: translate(-50%, -50%);
     }
   }
-  
+
   @media ${theme.media.tablet} {
     &::before {
       opacity: 1;
-    };
+    }
     ${Button} {
       opacity: 1;
-    };
-  };
-`;
+    }
+  }
+`
 
 const Img = styled.img`
   width: 100%;
   height: 260px;
   object-fit: cover;
-`;
+`
 
-const Title = styled.h3`
-  
-`;
+const Title = styled.h3``
 
 const Text = styled.p`
   margin: 14px 0 10px;
-`;
+`
 
 const Description = styled.div`
   padding: 25px 20px;
-`;
+`
 
 export const S = {
-    Works,
-    Work,
-    ImageWrapper,
-    Img,
-    Title,
-    Text,
-    Description
+  Description,
+  ImageWrapper,
+  Img,
+  Text,
+  Title,
+  Work,
+  Works,
 }
