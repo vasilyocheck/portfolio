@@ -9,8 +9,8 @@ import { App } from './app/ui/app'
 
 createRoot(document.getElementById('root') as HTMLElement).render(
   <StrictMode>
-    <GlobalStyle />
     <Provider store={store}>
+      <GlobalStyle />
       <App />
     </Provider>
   </StrictMode>

@@ -35,19 +35,22 @@ export const Footer = () => {
         <S.SocialList>
           {footerData.map((item, ind) => {
             return (
-              <a href={item.link} key={item.iconId} rel={'noreferrer'} target={'_blank'}>
-                <S.SocialItem>
-                  <S.SocialLink>
-                    <Icon
-                      height={item.height}
-                      iconId={item.iconId}
-                      key={ind}
-                      viewBox={item.viewBox}
-                      width={item.width}
-                    />
-                  </S.SocialLink>
-                </S.SocialItem>
-              </a>
+              <S.SocialItem key={item.iconId}>
+                <S.SocialLink
+                  href={item.link}
+                  key={item.iconId}
+                  rel={'noreferrer'}
+                  target={'_blank'}
+                >
+                  <Icon
+                    height={item.height}
+                    iconId={item.iconId}
+                    key={ind}
+                    viewBox={item.viewBox}
+                    width={item.width}
+                  />
+                </S.SocialLink>
+              </S.SocialItem>
             )
           })}
         </S.SocialList>
