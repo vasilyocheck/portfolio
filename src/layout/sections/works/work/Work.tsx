@@ -20,8 +20,8 @@ export const Work: FC<WorkPropsType> = (props: WorkPropsType) => {
       <S.Description>
         <S.Title>{props.title}</S.Title>
         <S.Text>{props.text}</S.Text>
-        <Link active>demo</Link>
-        <Link active={false}>code</Link>
+        <Link active={'true'}>demo</Link>
+        <Link active={'false'}>code</Link>
       </S.Description>
     </S.Work>
   )

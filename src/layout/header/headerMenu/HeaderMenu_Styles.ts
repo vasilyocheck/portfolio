@@ -1,11 +1,12 @@
-import styled, {css} from "styled-components";
-import {theme} from "../../../styles/Theme";
-import {Link} from "react-scroll";
+import { Link } from 'react-scroll'
+
+import { theme } from '@/styles/Theme'
+import styled, { css } from 'styled-components'
 
 // Menu
 const MenuItem = styled.li`
   position: relative;
-`;
+`
 
 const Mask = styled.span`
   position: absolute;
@@ -28,7 +29,7 @@ const Mask = styled.span`
       transform: translateY(-50%);
     }
   }
-`;
+`
 
 const NavLink = styled(Link)`
   text-align: center;
@@ -51,7 +52,8 @@ const NavLink = styled(Link)`
     transition: ${theme.animations.transition};
   }
 
-  &:hover, &.active {
+  &:hover,
+  &.active {
     &::before {
       transform: scale(1);
     }
@@ -65,15 +67,13 @@ const NavLink = styled(Link)`
       }
     }
   }
-`;
+`
 
 // Mobile Menu
 
-const StyledMobileMenu = styled.nav`
+const StyledMobileMenu = styled.nav``
 
-`;
-
-const BurgerButton = styled.button<{ isOpen: boolean }>`
+const BurgerButton = styled.button<{ isOpen: string }>`
   position: fixed;
   top: -100px;
   right: -100px;
@@ -90,9 +90,11 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     left: 40px;
     bottom: 50px;
 
-    ${props => props.isOpen && css<{ isOpen: boolean }>`
-      background-color: rgba(255, 255, 255, 0);
-    `}
+    ${props =>
+      props.isOpen === 'true' &&
+      css<{ isOpen: string }>`
+        background-color: rgba(255, 255, 255, 0);
+      `}
     &::before {
       content: '';
       display: block;
@@ -103,10 +105,11 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
 
       transform: translateY(-10px);
 
-      ${props => props.isOpen && css<{ isOpen: boolean }>`
-        transform: rotate(-45deg) translateY(0);
-      `}
-
+      ${props =>
+        props.isOpen === 'true' &&
+        css<{ isOpen: string }>`
+          transform: rotate(-45deg) translateY(0);
+        `}
     }
 
     &::after {
@@ -117,28 +120,30 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       background-color: ${theme.colors.font};
       position: absolute;
       transform: translateY(10px);
-      ${props => props.isOpen && css<{ isOpen: boolean }>`
-        width: 36px;
-        transform: rotate(45deg) translateY(0);
-      `}
+      ${props =>
+        props.isOpen === 'true' &&
+        css<{ isOpen: string }>`
+          width: 36px;
+          transform: rotate(45deg) translateY(0);
+        `}
     }
   }
-`;
+`
 
-const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
+const MobileMenuPopup = styled.div<{ isOpen: string }>`
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 9999;
-  background-color: rgba(31, 31, 32, 0.90);
+  background-color: rgba(31, 31, 32, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-100%);
   transition: 1s ease-in-out;
-  
+
   ul {
     display: flex;
     flex-direction: column;
@@ -148,13 +153,15 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     transition: 1s ease-in-out;
   }
 
-  ${props => props.isOpen && css<{ isOpen: boolean }>`
-    transform: translateY(0);
-    & ul {
-      gap: 40px;
-    }
-  `}
-`;
+  ${props =>
+    props.isOpen === 'true' &&
+    css<{ isOpen: string }>`
+      transform: translateY(0);
+      & ul {
+        gap: 40px;
+      }
+    `}
+`
 
 // Desktop Menu
 const DesktopMenu = styled.nav`
@@ -163,14 +170,14 @@ const DesktopMenu = styled.nav`
     gap: 30px;
     justify-content: center;
   }
-`;
+`
 
 export const S = {
-    NavLink,
-    MenuItem,
-    Mask,
-    StyledMobileMenu,
-    BurgerButton,
-    MobileMenuPopup,
-    DesktopMenu
+  BurgerButton,
+  DesktopMenu,
+  Mask,
+  MenuItem,
+  MobileMenuPopup,
+  NavLink,
+  StyledMobileMenu,
 }

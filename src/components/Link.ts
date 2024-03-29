@@ -1,7 +1,7 @@
 import { theme } from '@/styles/Theme'
 import styled, { css } from 'styled-components'
 
-export const Link = styled.a<{ active: boolean }>`
+export const Link = styled.a<{ active: string }>`
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: 0.0625rem;
@@ -30,8 +30,8 @@ export const Link = styled.a<{ active: boolean }>`
     right: 0;
 
     ${props =>
-      props.active &&
-      css<{ active: boolean }>`
+      props.active === 'true' &&
+      css<{ active: string }>`
         height: 10px;
       `};
 
