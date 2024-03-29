@@ -21,7 +21,7 @@ export const Work: FC<WorkPropsType> = (props: WorkPropsType) => {
         <S.Title>{props.title}</S.Title>
         <S.Text>{props.text}</S.Text>
         <Link active>demo</Link>
-        <Link>code</Link>
+        <Link active={false}>code</Link>
       </S.Description>
     </S.Work>
   )
