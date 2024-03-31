@@ -7,7 +7,7 @@ import { Icon } from '@/components/icon/Icon'
 import { Slider } from '@/components/slider/slider'
 import styled from 'styled-components'
 
-import { S } from '../skills/Skills_Styles'
+import { S } from '../skills/skills-styles'
 
 export const Testimony: FC = () => {
   return (

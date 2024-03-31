@@ -3,22 +3,27 @@ import { FC } from 'react'
 import { FlexWrapper } from '@/components/FlexWrapper'
 import { Icon } from '@/components/icon/Icon'
 
-import { S } from '../Skills_Styles'
+import { S } from '../skills-styles'
 
 type SkillPropsType = {
   description: string
   iconId: string
+  img?: string
   title: string
 }
 export const Skill: FC<SkillPropsType> = (props: SkillPropsType) => {
+  const { description, iconId, img, title } = props
+
+  console.log(img)
+
   return (
     <S.Skill>
       <FlexWrapper align={'center'} direction={'column'}>
         <S.IconWrapper>
-          <Icon iconId={props.iconId} />
+          {img && img.length > 0 ? <img alt={''} src={img} /> : <Icon iconId={iconId} />}
         </S.IconWrapper>
-        <S.SkillTitle>{props.title}</S.SkillTitle>
-        <S.SkillText>{props.description}</S.SkillText>
+        <S.SkillTitle>{title}</S.SkillTitle>
+        <S.SkillText>{description}</S.SkillText>
       </FlexWrapper>
     </S.Skill>
   )
