@@ -6,13 +6,12 @@ import { Icon } from '@/components/icon/Icon'
 import { S } from '../skills-styles'
 
 type SkillPropsType = {
-  description: string
   iconId: string
   img?: string
   title: string
 }
 export const Skill: FC<SkillPropsType> = (props: SkillPropsType) => {
-  const { description, iconId, img, title } = props
+  const { iconId, img, title } = props
 
   console.log(img)
 
@@ -23,7 +22,6 @@ export const Skill: FC<SkillPropsType> = (props: SkillPropsType) => {
           {img && img.length > 0 ? <img alt={''} src={img} /> : <Icon iconId={iconId} />}
         </S.IconWrapper>
         <S.SkillTitle>{title}</S.SkillTitle>
-        <S.SkillText>{description}</S.SkillText>
       </FlexWrapper>
     </S.Skill>
   )
