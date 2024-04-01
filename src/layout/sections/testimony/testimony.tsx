@@ -1,15 +1,13 @@
-import { FC } from 'react'
-
-import { Container } from '@/components/Container'
-import { FlexWrapper } from '@/components/FlexWrapper'
-import { SectionTitle } from '@/components/SectionTitle'
-import { Icon } from '@/components/icon/Icon'
+import { Container } from '@/components/container'
+import { FlexWrapper } from '@/components/flex-wrapper'
+import { Icon } from '@/components/icon/icon'
+import { SectionTitle } from '@/components/section-title'
 import { Slider } from '@/components/slider/slider'
 import styled from 'styled-components'
 
 import { S } from '../skills/skills-styles'
 
-export const Testimony: FC = () => {
+export const Testimony = () => {
   return (
     <StyledTestimony id={'testimony'}>
       <Container>

@@ -1,7 +1,6 @@
-import { Link } from '@/components/Link'
+import { Link } from '@/components/link'
+import { TabStatusType } from '@/layout/sections/works/tab-menu/tabs-items'
 import styled from 'styled-components'
-
-export type TabStatusType = 'all' | 'landing' | 'react' | 'spa'
 
 type TabMenuPropsType = {
   changeFilterStatus: (value: TabStatusType) => void

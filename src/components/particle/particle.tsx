@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 
-import { theme } from '@/styles/Theme'
+import { theme } from '@/styles/theme'
 import { type ISourceOptions } from '@tsparticles/engine'
 import Particles, { initParticlesEngine } from '@tsparticles/react'
 import { loadFull } from 'tsparticles'

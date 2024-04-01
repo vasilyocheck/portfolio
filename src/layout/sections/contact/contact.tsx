@@ -1,16 +1,16 @@
 import { useState } from 'react'
 import { SubmitHandler, useForm } from 'react-hook-form'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { SectionTitle } from '@/components/SectionTitle'
+import { Button } from '@/components/button'
+import { Container } from '@/components/container'
 import { Notification } from '@/components/notification/notification'
+import { SectionTitle } from '@/components/section-title'
 import { Email, useSendEmailMutation } from '@/services/send-mail'
-import { theme } from '@/styles/Theme'
+import { theme } from '@/styles/theme'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
 
-import { S } from './Contact_Styles'
+import { S } from './contact-styles'
 
 const messageSchema = z.object({
   message: z.string().min(15, { message: 'Message must be 15 or more characters long' }),

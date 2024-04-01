@@ -1,4 +1,4 @@
-import { theme } from '@/styles/Theme'
+import { theme } from '@/styles/theme'
 import styled, { css } from 'styled-components'
 
 export const Link = styled.a<{ active: string }>`
