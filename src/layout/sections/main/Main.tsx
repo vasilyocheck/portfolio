@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import Tilt from 'react-parallax-tilt'
 
 import { Container } from '@/components/Container'
@@ -8,7 +7,7 @@ import Typewriter from 'typewriter-effect'
 import photo from '../../../assets/images/works/photo_demo.webp'
 import { S } from './Main_Styles'
 
-export const Main: FC = () => {
+export const Main = () => {
   return (
     <S.Main id={'home'}>
       <Container>

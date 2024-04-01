@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { Container } from '@/components/Container'
 import { FlexWrapper } from '@/components/FlexWrapper'
 import { SectionTitle } from '@/components/SectionTitle'
@@ -9,7 +7,7 @@ import styled from 'styled-components'
 
 import { S } from '../skills/skills-styles'
 
-export const Testimony: FC = () => {
+export const Testimony = () => {
   return (
     <StyledTestimony id={'testimony'}>
       <Container>

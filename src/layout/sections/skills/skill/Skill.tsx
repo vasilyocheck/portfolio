@@ -1,5 +1,3 @@
-import { FC } from 'react'
-
 import { FlexWrapper } from '@/components/FlexWrapper'
 import { Icon } from '@/components/icon/Icon'
 
@@ -10,10 +8,8 @@ type SkillPropsType = {
   img?: string
   title: string
 }
-export const Skill: FC<SkillPropsType> = (props: SkillPropsType) => {
+export const Skill = (props: SkillPropsType) => {
   const { iconId, img, title } = props
-
-  console.log(img)
 
   return (
     <S.Skill>

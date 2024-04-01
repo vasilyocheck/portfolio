@@ -1,4 +1,4 @@
-import { FC, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import { Container } from '@/components/Container'
 import { FlexWrapper } from '@/components/FlexWrapper'
@@ -8,7 +8,7 @@ import { S } from './Header_Styles'
 import { DesktopMenu } from './headerMenu/desktopMenu/DesktopMenu'
 import { MobileMenu } from './headerMenu/mobileMenu/MobileMenu'
 
-export const Header: FC = () => {
+export const Header = () => {
   const [width, setWidth] = useState(window.innerWidth)
   const breakpoint = 768
 

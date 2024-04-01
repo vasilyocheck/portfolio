@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import { Fade } from 'react-awesome-reveal'
 
 import { Container } from '@/components/Container'
@@ -14,7 +13,7 @@ import reduxhf from '../../../assets/images/skills/react-hook-form-logo-only-50-
 import { Skill } from './skill/Skill'
 import { S } from './skills-styles'
 
-export const Skills: FC = () => {
+export const Skills = () => {
   return (
     <S.Skills id={'skills'}>
       <Container>

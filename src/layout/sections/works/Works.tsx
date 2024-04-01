@@ -1,41 +1,18 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import { Container } from '@/components/Container'
 import { FlexWrapper } from '@/components/FlexWrapper'
 import { SectionTitle } from '@/components/SectionTitle'
+import { TabStatusType, tabsItems } from '@/layout/sections/works/tabMenu/tabs-items'
 import { AnimatePresence, motion } from 'framer-motion'
 
-import timerImg from '../../../assets/images/works/countdown.webp'
 import goliaf from '../../../assets/images/works/goliaf.webp'
 import madam from '../../../assets/images/works/madam.webp'
 import medil from '../../../assets/images/works/medil.webp'
-import socialImg from '../../../assets/images/works/soc_networks.webp'
+import todolist from '../../../assets/images/works/todolist.webp'
 import { S } from './Works_Styles'
-import { TabMenu, TabStatusType } from './tabMenu/TabMenu'
+import { TabMenu } from './tabMenu/TabMenu'
 import { Work } from './work/Work'
-
-const tabsItems: Array<{ status: TabStatusType; title: string }> = [
-  {
-    status: 'all',
-    title: 'all',
-  },
-  {
-    status: 'landing',
-    title: 'landing',
-  },
-  {
-    status: 'react',
-    title: 'react',
-  },
-  {
-    status: 'spa',
-    title: 'spa',
-  },
-  {
-    status: 'ecommerce',
-    title: 'ecommerce',
-  },
-]
 
 const worksData = [
   {
@@ -65,28 +42,14 @@ const worksData = [
   {
     code: '',
     id: 4,
-    imgSrc: timerImg,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim.',
-    title: 'Timer',
-    type: 'react',
-  },
-  {
-    id: 5,
-    imgSrc: socialImg,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    title: 'Social Network',
-    type: 'spa',
-  },
-  {
-    id: 6,
-    imgSrc: timerImg,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim.',
-    title: 'Timer',
+    imgSrc: todolist,
+    text: 'The task of this project was to create classic to-do lists using Material UI library. Redux Toolkit was chosen as a state manager for this application.',
+    title: 'Todolist',
     type: 'react',
   },
 ]
 
-export const Works: React.FC = () => {
+export const Works = () => {
   const [currentFilterStatus, setCurrentFilterStatus] = useState('all')
   let filteredWorks = worksData
 
