@@ -6,6 +6,9 @@ import { SectionTitle } from '@/components/SectionTitle'
 import { AnimatePresence, motion } from 'framer-motion'
 
 import timerImg from '../../../assets/images/works/countdown.webp'
+import goliaf from '../../../assets/images/works/goliaf.webp'
+import madam from '../../../assets/images/works/madam.webp'
+import medil from '../../../assets/images/works/medil.webp'
 import socialImg from '../../../assets/images/works/soc_networks.webp'
 import { S } from './Works_Styles'
 import { TabMenu, TabStatusType } from './tabMenu/TabMenu'
@@ -18,7 +21,7 @@ const tabsItems: Array<{ status: TabStatusType; title: string }> = [
   },
   {
     status: 'landing',
-    title: 'landing page',
+    title: 'landing',
   },
   {
     status: 'react',
@@ -28,31 +31,39 @@ const tabsItems: Array<{ status: TabStatusType; title: string }> = [
     status: 'spa',
     title: 'spa',
   },
+  {
+    status: 'ecommerce',
+    title: 'ecommerce',
+  },
 ]
 
 const worksData = [
   {
     id: 1,
-    imgSrc: socialImg,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    title: 'Social Network',
-    type: 'spa',
+    imgSrc: madam,
+    text: 'This app was developed using WordPress to let the owner of the shop further updates of the shop and manage the content of the website.',
+    title: 'Garden Flowers Shop',
+    type: 'ecommerce',
+    webLink: 'https://madamroza.shop',
   },
   {
     id: 2,
-    imgSrc: timerImg,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim.',
-    title: 'Timer',
-    type: 'react',
+    imgSrc: medil,
+    text: 'This website was developed without using any library or framework. HTML + CSS + Javascript - are parts of this website recipe.',
+    title: 'Food Ingredients Landing Page',
+    type: 'landing',
+    webLink: 'http://medil.group/',
   },
   {
     id: 3,
-    imgSrc: socialImg,
-    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-    title: 'Social Network',
-    type: 'spa',
+    imgSrc: goliaf,
+    text: 'One of the customers asked to find a way to receive a complete data structured properly so that it could be quickly calculated. This is the solution.',
+    title: 'Shipment Company Landing Page',
+    type: 'landing',
+    webLink: 'http://goliaftrans.pro',
   },
   {
+    code: '',
     id: 4,
     imgSrc: timerImg,
     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim. Lorem ipsum dolor sit amet, consectetur adipisicing elit  ut labore et dolore magna aliqua Ut enim.',
@@ -88,6 +99,9 @@ export const Works: React.FC = () => {
   if (currentFilterStatus === 'spa') {
     filteredWorks = worksData.filter(work => work.type === 'spa')
   }
+  if (currentFilterStatus === 'ecommerce') {
+    filteredWorks = worksData.filter(work => work.type === 'ecommerce')
+  }
 
   const changeFilterStatus = (value: TabStatusType) => {
     setCurrentFilterStatus(value)
@@ -114,7 +128,14 @@ export const Works: React.FC = () => {
                   layout
                   style={{ flexGrow: 1, maxWidth: '540px', width: '400px' }}
                 >
-                  <Work imgSrc={work.imgSrc} key={work.id} text={work.text} title={work.title} />
+                  <Work
+                    code={work.code || 'https://github.com/vasilyocheck'}
+                    imgSrc={work.imgSrc}
+                    key={work.id}
+                    text={work.text}
+                    title={work.title}
+                    webLink={work.webLink}
+                  />
                 </motion.div>
               )
             })}

@@ -1,27 +1,35 @@
-import { FC } from 'react'
-
 import { Button } from '@/components/Button'
 import { Link } from '@/components/Link'
 
 import { S } from '../Works_Styles'
 
 type WorkPropsType = {
+  code: string
   imgSrc: string
   text: string
   title: string
+  webLink?: string
 }
-export const Work: FC<WorkPropsType> = (props: WorkPropsType) => {
+export const Work = (props: WorkPropsType) => {
   return (
     <S.Work>
       <S.ImageWrapper>
         <S.Img alt={''} src={props.imgSrc} />
-        <Button>view project</Button>
+        <Button>
+          <Link active={''} href={props.webLink || ''} target={'_blank'}>
+            view project
+          </Link>
+        </Button>
       </S.ImageWrapper>
       <S.Description>
         <S.Title>{props.title}</S.Title>
         <S.Text>{props.text}</S.Text>
-        <Link active={'true'}>demo</Link>
-        <Link active={'false'}>code</Link>
+        <Link active={'true'} href={props.webLink || ''} target={'_blank'}>
+          demo
+        </Link>
+        <Link active={'false'} href={props.code}>
+          code
+        </Link>
       </S.Description>
     </S.Work>
   )
