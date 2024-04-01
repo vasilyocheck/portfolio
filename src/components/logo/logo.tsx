@@ -1,6 +1,6 @@
 import { animateScroll as scroll } from 'react-scroll'
 
-import { Icon } from '../icon/Icon'
+import { Icon } from '../icon/icon'
 
 export const Logo = () => {
   return (

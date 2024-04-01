@@ -3,7 +3,7 @@ import { animateScroll as scroll } from 'react-scroll'
 
 import styled from 'styled-components'
 
-import { Icon } from '../icon/Icon'
+import { Icon } from '../icon/icon'
 
 export const GoTopBtn = () => {
   const [showBtn, setShowBtn] = useState(false)

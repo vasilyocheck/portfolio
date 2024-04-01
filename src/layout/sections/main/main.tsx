@@ -1,11 +1,11 @@
 import Tilt from 'react-parallax-tilt'
 
-import { Container } from '@/components/Container'
-import { FlexWrapper } from '@/components/FlexWrapper'
+import { Container } from '@/components/container'
+import { FlexWrapper } from '@/components/flex-wrapper'
 import Typewriter from 'typewriter-effect'
 
 import photo from '../../../assets/images/works/photo_demo.webp'
-import { S } from './Main_Styles'
+import { S } from './main-styles'
 
 export const Main = () => {
   return (

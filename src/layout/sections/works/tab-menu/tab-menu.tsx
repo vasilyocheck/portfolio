@@ -1,5 +1,5 @@
-import { Link } from '@/components/Link'
-import { TabStatusType } from '@/layout/sections/works/tabMenu/tabs-items'
+import { Link } from '@/components/link'
+import { TabStatusType } from '@/layout/sections/works/tab-menu/tabs-items'
 import styled from 'styled-components'
 
 type TabMenuPropsType = {

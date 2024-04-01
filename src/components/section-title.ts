@@ -1,5 +1,5 @@
-import { font } from '@/styles/Common'
-import { theme } from '@/styles/Theme'
+import { font } from '@/styles/common'
+import { theme } from '@/styles/theme'
 import styled from 'styled-components'
 
 export const SectionTitle = styled.h2`

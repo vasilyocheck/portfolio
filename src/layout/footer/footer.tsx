@@ -1,7 +1,7 @@
-import { FlexWrapper } from '@/components/FlexWrapper'
-import { Icon } from '@/components/icon/Icon'
+import { FlexWrapper } from '@/components/flex-wrapper'
+import { Icon } from '@/components/icon/icon'
 
-import { S } from './Footer_Styles'
+import { S } from './footer-styles'
 
 const footerData = [
   {

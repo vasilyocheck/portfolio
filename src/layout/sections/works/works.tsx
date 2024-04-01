@@ -1,18 +1,18 @@
 import { useState } from 'react'
 
-import { Container } from '@/components/Container'
-import { FlexWrapper } from '@/components/FlexWrapper'
-import { SectionTitle } from '@/components/SectionTitle'
-import { TabStatusType, tabsItems } from '@/layout/sections/works/tabMenu/tabs-items'
+import { Container } from '@/components/container'
+import { FlexWrapper } from '@/components/flex-wrapper'
+import { SectionTitle } from '@/components/section-title'
+import { TabMenu } from '@/layout/sections/works/tab-menu/tab-menu'
+import { TabStatusType, tabsItems } from '@/layout/sections/works/tab-menu/tabs-items'
 import { AnimatePresence, motion } from 'framer-motion'
 
 import goliaf from '../../../assets/images/works/goliaf.webp'
 import madam from '../../../assets/images/works/madam.webp'
 import medil from '../../../assets/images/works/medil.webp'
 import todolist from '../../../assets/images/works/todolist.webp'
-import { S } from './Works_Styles'
-import { TabMenu } from './tabMenu/TabMenu'
-import { Work } from './work/Work'
+import { Work } from './work/work'
+import { S } from './works-styles'
 
 const worksData = [
   {

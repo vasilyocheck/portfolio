@@ -1,7 +1,7 @@
-import { Button } from '@/components/Button'
-import { Link } from '@/components/Link'
+import { Button } from '@/components/button'
+import { Link } from '@/components/link'
 
-import { S } from '../Works_Styles'
+import { S } from '../works-styles'
 
 type WorkPropsType = {
   code: string

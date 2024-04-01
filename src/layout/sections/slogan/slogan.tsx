@@ -1,8 +1,8 @@
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { FlexWrapper } from '@/components/FlexWrapper'
-import { Link } from '@/components/Link'
-import { SectionTitle } from '@/components/SectionTitle'
+import { Button } from '@/components/button'
+import { Container } from '@/components/container'
+import { FlexWrapper } from '@/components/flex-wrapper'
+import { Link } from '@/components/link'
+import { SectionTitle } from '@/components/section-title'
 import styled from 'styled-components'
 
 export const Slogan = () => {

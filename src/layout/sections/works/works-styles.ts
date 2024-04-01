@@ -1,7 +1,7 @@
-import { Button } from '@/components/Button'
-import { FlexWrapper } from '@/components/FlexWrapper'
-import { Link } from '@/components/Link'
-import { theme } from '@/styles/Theme'
+import { Button } from '@/components/button'
+import { FlexWrapper } from '@/components/flex-wrapper'
+import { Link } from '@/components/link'
+import { theme } from '@/styles/theme'
 import styled from 'styled-components'
 
 const Works = styled.section`

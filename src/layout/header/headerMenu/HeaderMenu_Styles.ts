@@ -1,6 +1,6 @@
 import { Link } from 'react-scroll'
 
-import { theme } from '@/styles/Theme'
+import { theme } from '@/styles/theme'
 import styled, { css } from 'styled-components'
 
 // Menu
