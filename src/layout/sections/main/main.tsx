@@ -23,7 +23,7 @@ export const Main = () => {
                 options={{
                   autoStart: true,
                   loop: true,
-                  strings: ['A Web Developer', 'A Frontend Developer', 'A Web Designer'],
+                  strings: ['A Web Developer', 'A Frontend Developer', 'A Software Engineer'],
                 }}
               />
             </S.MainTitle>
