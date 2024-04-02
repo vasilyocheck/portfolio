@@ -40,12 +40,13 @@ const worksData = [
     webLink: 'http://goliaftrans.pro',
   },
   {
-    code: '',
+    code: 'https://github.com/vasilyocheck/todolist',
     id: 4,
     imgSrc: todolist,
     text: 'The task of this project was to create classic to-do lists using Material UI library. Redux Toolkit was chosen as a state manager for this application.',
     title: 'Todolist',
     type: 'react',
+    webLink: 'https://todolist-livid-one.vercel.app/',
   },
 ]
 
