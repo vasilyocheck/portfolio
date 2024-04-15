@@ -14,7 +14,7 @@ const footerData = [
   {
     height: '21px',
     iconId: 'telegram',
-    link: 'https://t.me/bacek_03',
+    link: 'https://t.me/vasily_medvedev',
     viewBox: '0 0 21 21',
     width: '21px',
   },
